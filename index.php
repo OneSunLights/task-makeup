@@ -2,7 +2,6 @@
     require_once("DB/DB.php");
     $connect = new DB('localhost','root','R@@t','hhru','resum');
     $getList = $connect->getResum();
-//    var_dump($getList);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,10 +56,7 @@
     </header>
 
     <?php
-        $from = $_GET["from"];
-        if(!isset($from)){
             require_once ("templates/resume-list.php");
-        }
     ?>
 
     <footer class="footer">
