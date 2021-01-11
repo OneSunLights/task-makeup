@@ -1,5 +1,5 @@
 <?php
-
+// Класс базы данных
 class DB{
     private $host;
     private $login;
